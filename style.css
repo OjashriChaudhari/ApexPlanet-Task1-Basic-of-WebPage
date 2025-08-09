@@ -1,0 +1,161 @@
+/* color variable declaration */
+:root {
+  --bodyBacground: #0f4d4b;
+  --bg: #0f5f5c;
+  --headingbg: #578281;
+  --textHeading: #ffffff;
+  --heading: #f4c542;
+  --paracolor: #ffffff;
+  --buttonBorder: #f4c542;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bodyBacground);
+}
+
+.heading-section {
+  background-color: var(--headingbg);
+  font-family: "Trirong", serif;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--heading);
+}
+
+.places-section {
+  /* margin: 1.5rem; */
+  background-color: var(--bg);
+  border: solid 1px var(--heading);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 3rem 5rem;
+  height: auto;
+}
+
+.places-heading {
+  text-align: center;
+  color: var(--textHeading);
+  font-size: 2rem;
+}
+.place-info {
+  display: flex;
+}
+
+.about-section {
+  width: 40rem;
+  margin-right: 3rem;
+}
+
+.about-section h3 {
+  margin: 2rem auto 1rem 2rem;
+  color: var(--heading);
+  font-size: 1.5rem;
+}
+
+.about-section p {
+  margin: 0 auto 1rem 2rem;
+  color: var(--paracolor);
+  font-family: "Georgia";
+  letter-spacing: 1.8px;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.places-images {
+  background-color: var(--textHeading);
+  height: 300px;
+  width: 365px;
+  margin: 2rem 0.5rem 0.5rem 2rem;
+}
+.places-images img {
+  height: 250px;
+  width: 350px;
+  margin: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.places-images p {
+  text-align: center;
+  padding-top: 5px;
+  font-family: "papyrus", fantasy;
+  font-weight: 600;
+}
+.btn {
+  margin: 1rem auto 1rem 2rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-family: "Georgia", serif;
+  font-weight: 600;
+  background: none;
+  outline: none;
+  border: 1px solid var(--buttonBorder);
+  color: var(--heading);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--heading);
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  .places-section {
+    margin: 2rem 2rem;
+  }
+
+  .about-section {
+    width: 100%;
+    margin: 0;
+  }
+
+  .place-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .places-images {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .places-images img {
+    /* height: auto; */
+    width: 95%;
+  }
+  .btn {
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .places-heading {
+    font-size: 1.5rem;
+  }
+
+  .about-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-section p {
+    font-size: 0.95rem;
+    margin: 0 1rem;
+    letter-spacing: 1px;
+  }
+
+  .places-images {
+    height: auto;
+  }
+  .places-images img {
+    height: auto;
+    width: 95%;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
